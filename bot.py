@@ -42,7 +42,7 @@ async def dice(ctx):
     
     
 @bot.command(pass_context=True)
-async def headtails(context):
+async def flip(context):
     possible_responses = [
         'Head',
         'Tails',
@@ -51,7 +51,7 @@ async def headtails(context):
 
 @bot.command(pass_context=True)
 async def commands(ctx):
-    await bot.say(" ::headtails \n::dice \n::square \n::uptime  \n::musiccommands   ")   
+    await bot.say(" ::flip \n::dice \n::square \n::uptime  \n::musiccommands   ")   
 
 @bot.command(pass_context=True)
 async def musiccommands(ctx):
