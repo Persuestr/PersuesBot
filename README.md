@@ -1,5 +1,6 @@
 # PersuesBot
 PersuesBot is a Discord Bot that made for experience and fun
+Prefix = ::
 
 **Basic Commands**
 
