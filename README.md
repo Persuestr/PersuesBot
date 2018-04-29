@@ -6,7 +6,7 @@ PersuesBot is a Discord Bot that made for experience and fun
 
 
 **Basic Commands**
-- headtails     
+- flip     
 - dice          
 - square        
 - uptime
@@ -18,7 +18,7 @@ PersuesBot is a Discord Bot that made for experience and fun
 - volume
 - stop
 - skip
-- laying
+- playing
 
 More commands will be added in future.
 
