@@ -1,14 +1,12 @@
 # PersuesBot
 PersuesBot is a Discord Bot that made for experience and fun
 
-Prefix = ::
-
 **Basic Commands**
-
 - headtails     
 - dice          
 - square        
-- uptime        
+- uptime
+- commands
 - musiccommands 
 
 **Music Commands**
