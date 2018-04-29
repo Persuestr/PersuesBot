@@ -24,5 +24,5 @@ More commands will be added in future.
 
 **My Discord**
 
-For support and questions -> Persues#5323
+*For support and questions -> Persues#5323
  
