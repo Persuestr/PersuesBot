@@ -81,4 +81,4 @@ async def servers():
 
 
 
-bot.run("NDM4MjgwNTc2MjIzNTQzMjk2.DcHUVg.kZlyZTwJf13C73nE-w08ykHRxCU")
+bot.run("Bot's Token")
