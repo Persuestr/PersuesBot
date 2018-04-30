@@ -12,12 +12,18 @@ from discord.ext.commands import Bot
 from random import randint
 
 startup_extensions = ["Music"]
-
 Client = discord.Client()
 bot = commands.Bot("::")
 
 start_time = time.time()
 starttime2 = time.ctime(int(time.time()))
+
+class Info:
+    counter = 0
+    def __init__(self):
+        pass
+count = Info()
+Info.counter = 0
 
 @bot.event
 async def on_ready():
@@ -39,7 +45,7 @@ if __name__ == "__main__":
 @bot.command(pass_context=True)
 async def dice(ctx):
     await bot.say(randint(1,6))
-    
+    Info.counter+= 1
     
 @bot.command(pass_context=True)
 async def flip(context):
@@ -48,14 +54,18 @@ async def flip(context):
         'Tails',
     ]
     await bot.say(random.choice(possible_responses) + ", " + context.message.author.mention)
-
+    Info.counter+= 1
+    
 @bot.command(pass_context=True)
 async def commands(ctx):
     await bot.say(" ::flip \n::dice \n::square \n::uptime  \n::musiccommands   ")   
+    Info.counter+= 1
 
+    
 @bot.command(pass_context=True)
 async def musiccommands(ctx):
     await bot.say("::play \n::volume \n::skip \n::stop \n::playing ")
+    Info.counter+= 1
 
 @bot.command()
 async def uptime():
@@ -66,11 +76,13 @@ async def uptime():
     day, hour = divmod(hour, 24)
     week, day = divmod(day, 7)
     await bot.say("Bot is online for : %d week, %d day, %d hour, %d minute, %d seconds " % (week, day, hour, minute, second))
+    Info.counter+= 1
     
 @bot.command()
 async def square(number):
     squared_value = int(number) * int(number)
     await bot.say(str(number) + " square is " + str(squared_value))
+    Info.counter+= 1
 
 @bot.command()
 async def servers():
