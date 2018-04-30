@@ -22,7 +22,7 @@ It is usually online between these hours 9am 12pm (GMT+3)
 - skip
 - playing
 
-More commands will be added in future.
+More features will be added in future.
 
 **My Discord**
 
