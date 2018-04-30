@@ -91,6 +91,9 @@ async def servers():
             print(server.name + "\n")
         await asyncio.sleep(600)
 
+@bot.command()
+async def times():
+    print(Info.counter)
 
 
 bot.run("Bot's Token")
