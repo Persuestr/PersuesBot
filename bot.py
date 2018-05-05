@@ -11,19 +11,19 @@ from discord.voice_client import VoiceClient
 from discord.ext.commands import Bot
 from random import randint
 
-startup_extensions = ["Music"]
-Client = discord.Client()
-bot = commands.Bot("::")
-
-start_time = time.time()
-starttime2 = time.ctime(int(time.time()))
-
 class Info:
     counter = 0
     def __init__(self):
         pass
 count = Info()
 Info.counter = 0
+
+startup_extensions = ["Music"]
+Client = discord.Client()
+bot = commands.Bot("::")
+
+start_time = time.time()
+starttime2 = time.ctime(int(time.time()))
 
 @bot.event
 async def on_ready():
