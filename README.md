@@ -12,8 +12,7 @@ It is usually online between these hours 9am 12pm (GMT+3)
 - dice          
 - square        
 - uptime
-- commands
-- musiccommands 
+- dolar (For turkish ppl) 
 
 **Music Commands**
 - play
