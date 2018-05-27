@@ -27,4 +27,4 @@ More features will be added in future.
 
 *For support and questions -> Persues#5323*
  
-Dollar exchange rate based on this website: https://kur.doviz.com/serbest-piyasa/amerikan-dolari#
+Dollar exchange rate based on this website: http://www.bloomberght.com/doviz/dolar
