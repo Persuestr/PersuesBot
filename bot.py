@@ -79,12 +79,12 @@ async def uptime():
     
 @bot.command()
         async def dolar():
-            quote_page = 'https://kur.doviz.com/serbest-piyasa/amerikan-dolari#'
+            quote_page = 'http://www.bloomberght.com/doviz/dolar'
             page = urllib.request.urlopen(quote_page)
             soup = BeautifulSoup(page,'html.parser')
-            name_box = soup.find('span',attrs={'class','color-green'})
+            name_box = soup.find('div',attrs={'class':'col-lg-8 col-sm-12 col-xs-12 col-md-6 marB10 piyasaDetayTitle'})
             name = name_box.text.strip()
-            await bot.say("Dolar kuru: "+ name)
+            await bot.say(name)
             Info.counter+= 1
     
 @bot.command()
