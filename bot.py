@@ -22,7 +22,7 @@ Info.counter = 0
 
 startup_extensions = ["Music"]
 Client = discord.Client()
-bot = commands.Bot("::")
+bot = commands.Bot("/")
 
 start_time = time.time()
 starttime2 = time.ctime(int(time.time()))
@@ -86,7 +86,17 @@ async def uptime():
             name = name_box.text.strip()
             await bot.say(name)
             Info.counter+= 1
-    
+            
+@bot.command(pass_context = True)
+        async def clear(ctx,number):
+            number = int(number)
+            counterr = 0
+            async for x in bot.logs_from(ctx.message.channel, limit = number):
+                if counterr < number:
+                    await bot.delete_message(x)
+                    counterr +=1
+                    await asyncio.sleep(0.2)
+                    
 @bot.command()
 async def servers():
         print("Servers: ")
