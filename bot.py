@@ -88,14 +88,12 @@ async def uptime():
             Info.counter+= 1
             
 @bot.command(pass_context = True)
-        async def clear(ctx,number):
-            number = int(number)
-            counterr = 0
-            async for x in bot.logs_from(ctx.message.channel, limit = number):
-                if counterr < number:
-                    await bot.delete_message(x)
-                    counterr +=1
-                    await asyncio.sleep(0.2)
+async def clear(ctx, number):
+    mgs = [] 
+    number = int(number)
+    async for x in bot.logs_from(ctx.message.channel, limit = number):
+        mgs.append(x)
+    await bot.delete_messages(mgs)
                     
 @bot.command()
 async def servers():
