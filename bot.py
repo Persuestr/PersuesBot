@@ -91,7 +91,7 @@ async def uptime():
 async def clear(ctx, number):
     mgs = [] 
     number = int(number)
-    async for x in bot.logs_from(ctx.message.channel, limit = number):
+    async for x in bot.logs_from(ctx.message.channel, limit = number+1):
         mgs.append(x)
     await bot.delete_messages(mgs)
     await bot.say("I have deleted "+ str(number) + " messages for you ♥ ")
