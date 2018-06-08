@@ -95,6 +95,10 @@ async def clear(ctx, number):
         mgs.append(x)
     await bot.delete_messages(mgs)
     await bot.say("I have deleted "+ str(number) + " messages for you ♥ ")
+    await asyncio.sleep(4)
+    async for x in bot.logs_from(ctx.message.channel, limit = 1):
+        mgs.append(x)
+    await bot.delete_messages(mgs)
     
 @bot.command()
 async def servers():
