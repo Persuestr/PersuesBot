@@ -13,6 +13,9 @@ from discord.ext.commands import Bot
 from random import randint
 from bs4 import BeautifulSoup
 
+# https://github.com/Persuestr
+# Made by Oğuzhan Taşımaz,  Apr 29 2018 
+
 class Info:
     counter = 0
     def __init__(self):
