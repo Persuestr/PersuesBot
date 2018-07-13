@@ -4,7 +4,7 @@ Main feature is it can play music.
 
 7/24 ONLINE
 
-Prefix = /
+Prefix = '/'
 
 [You can add my bot to your server by clicking here](https://discordapp.com/api/oauth2/authorize?client_id=440163732383989761&permissions=0&scope=bot)
 
