@@ -30,6 +30,6 @@ More features will be added in future.
 
 **My Discord**
 
-*For support and questions -> Persues#5323 , @persuest on twitter , oguzhantasimaz@gmail.com  *
+*For support and questions -> Persues#5323 , [@persuest](https://twitter.com/Persuest) on twitter*
  
 Dollar exchange rate based on this website: http://www.bloomberght.com/doviz/dolar
