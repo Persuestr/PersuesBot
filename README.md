@@ -16,8 +16,9 @@ Prefix = '/'
 - dice          
 - square        
 - uptime
-- dolar (Exchange rate of dollar for turkish ppl) 
 - clear (number)
+- dolar (Exchange rate of dollar for turkish ppl) 
+- euro (Exchange rate of euro for turkish ppl)
 
 **Music Commands**
 - play
