@@ -89,6 +89,17 @@ async def uptime():
             name = name_box.text.strip()
             await bot.say(name)
             Info.counter+= 1
+
+@bot.command()
+async def euro():
+    """Exchange rate of euro for turkish ppl."""
+    quote_page = 'https://www.bloomberght.com/doviz/euro'
+    page = urllib.request.urlopen(quote_page)
+    soup = BeautifulSoup(page,'html.parser')
+    name_box = soup.find('div',attrs={'class':'col-lg-8 col-sm-12 col-xs-12 col-md-6 marB10 piyasaDetayTitle'})
+    name = name_box.text.strip()
+    await bot.say(name)
+    Info.counter+= 1            
             
 @bot.command(pass_context = True)
 async def clear(ctx, number):
