@@ -1,6 +1,7 @@
 # PersuesBot
 PersuesBot is a Discord Bot that made for experience and fun.
 Main feature is it can play music.
+Dont forget to give permission to bot.
 
 7/24 ONLINE
 
