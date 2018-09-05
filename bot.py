@@ -14,7 +14,6 @@ from discord.ext.commands import Bot
 from random import randint
 from bs4 import BeautifulSoup
 
-
 class Info:
     counter = 0
     def __init__(self):
@@ -30,6 +29,10 @@ bot = commands.Bot("/")
 
 start_time = time.time()
 starttime2 = time.ctime(int(time.time()))
+
+description = """
+Hello! I am a bot written by Persuest to provide some nice utilities.
+"""
 
 @bot.event
 async def on_ready():
