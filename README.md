@@ -2,6 +2,8 @@
 
 
 **BOT IS NO LONGER SUPPORTED CAUSE OF VIRTUAL MACHINE PROBLEMS, THANK YOU FOR USING IT**
+
+
 **29 APRIL 2018 - 11 DECEMBER 2018**
 
 PersuesBot is a Discord Bot that made for experience and fun.
